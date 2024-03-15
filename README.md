@@ -70,19 +70,25 @@ docker tag checkpoint1 tiagoalcan/fiap-checkpoint1
 docker push tiagoalcan/fiap-checkpoint1 
 ```
 
-*Comando docker para executar a aplicação a partir do docker hub com o profile "dev" (desenvolvimento)
+* Pegando a imagem do Docker hub
+
+```
+docker pull tiagoalcan/fiap-checkpoint1:latest
+```
+
+* Comando docker para executar a aplicação a partir do docker hub com o profile "dev" (desenvolvimento)
 
 ```
 docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/fiap-checkpoint1 
 ```
 
-*Comando docker para executar a aplicação a partir do docker hub com o profile "prd" (produção)
+* Comando docker para executar a aplicação a partir do docker hub com o profile "prd" (produção)
 
 ```
 docker run -d -p 8080:8080 -e PROFILE=prd tiagoalcan/fiap-checkpoint1 
 ```
 
-*Comando docker para executar a aplicação a partir do docker hub com o profile "stg"(stagging - homologação)
+* Comando docker para executar a aplicação a partir do docker hub com o profile "stg"(stagging - homologação)
 
 ```
 docker run -d -p 8080:8080 -e PROFILE=stg tiagoalcan/fiap-checkpoint1  

@@ -59,7 +59,7 @@ docker build -t <username>/checkpoint1 .
 
 
 ```
-docker tag checkpoint1 tiagoalcan/checkpoint1
+docker tag checkpoint1 tiagoalcan/fiap-checkpoint1
 ```
 
 
@@ -67,25 +67,25 @@ docker tag checkpoint1 tiagoalcan/checkpoint1
 
 
 ```
-docker push tiagoalcan/checkpoint1 
+docker push tiagoalcan/fiap-checkpoint1 
 ```
 
-*Comando docker para executar a aplicação a partir do docker hub com o profile "dev"
+*Comando docker para executar a aplicação a partir do docker hub com o profile "dev" (desenvolvimento)
 
 ```
-docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/checkpoint1 
+docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/fiap-checkpoint1 
 ```
 
-*Comando docker para executar a aplicação a partir do docker hub com o profile "dev"
+*Comando docker para executar a aplicação a partir do docker hub com o profile "prd" (produção)
 
 ```
-docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/checkpoint1 
+docker run -d -p 8080:8080 -e PROFILE=prd tiagoalcan/fiap-checkpoint1 
 ```
 
-*Comando docker para executar a aplicação a partir do docker hub com o profile "dev"
+*Comando docker para executar a aplicação a partir do docker hub com o profile "stg"(stagging - homologação)
 
 ```
-docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/checkpoint1  
+docker run -d -p 8080:8080 -e PROFILE=stg tiagoalcan/fiap-checkpoint1  
 ```
 
 #### Navegação

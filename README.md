@@ -25,7 +25,7 @@ https://github.com/TiagoAlcan/fiap-checkpoint1.git
 * Criar imagem
 
 ```
-docker build -t checkpoint1 .
+docker build -t fiap-checkpoint1 .
 ```
 
 * Executar container
@@ -33,7 +33,7 @@ docker build -t checkpoint1 .
 spring.profiles.active=<prd|dev|stg>
 
 ```
-docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> checkpoint1
+docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> fiap-checkpoint1
 ```
 
 ## Container Registry
@@ -51,7 +51,7 @@ docker login -u <username>
 
 
 ```
-docker build -t <username>/checkpoint1 .
+docker build -t <username>/fiap-checkpoint1 .
 ```
 
 

@@ -51,7 +51,7 @@ docker login -u <username>
 
 
 ```
-docker build -t <username>/checkpoint .
+docker build -t <username>/checkpoint1 .
 ```
 
 
@@ -59,7 +59,7 @@ docker build -t <username>/checkpoint .
 
 
 ```
-docker tag ping tiagoalcan/checkpoint1
+docker tag checkpoint1 tiagoalcan/checkpoint1
 ```
 
 
@@ -70,7 +70,23 @@ docker tag ping tiagoalcan/checkpoint1
 docker push tiagoalcan/checkpoint1 
 ```
 
+*Comando docker para executar a aplicação a partir do docker hub com o profile "dev"
 
+```
+docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/checkpoint1 
+```
+
+*Comando docker para executar a aplicação a partir do docker hub com o profile "dev"
+
+```
+docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/checkpoint1 
+```
+
+*Comando docker para executar a aplicação a partir do docker hub com o profile "dev"
+
+```
+docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/checkpoint1  
+```
 
 #### Navegação
 
@@ -94,5 +110,5 @@ http://localhost:8080/ping
 
 ## Referencias
 
- - [UOL](https://www.uol.com.br/)
- - [Gov br](https://www.gov.br/)
+ - [GitHub](https://github.com/TiagoAlcan)
+ - [DockerHub](https://hub.docker.com/u/tiagoalcan)

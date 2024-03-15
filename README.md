@@ -14,7 +14,7 @@ Aplicação Java com container para exemplo
 #### Clone
 
 ```
-git clone https://github.com/acnaweb/ping.git
+https://github.com/TiagoAlcan/fiap-checkpoint1.git
 ```
 
 ## Execução
@@ -25,15 +25,15 @@ git clone https://github.com/acnaweb/ping.git
 * Criar imagem
 
 ```
-docker build -t ping .
+docker build -t checkpoint1 .
 ```
 
 * Executar container
 
-spring.profiles.active=dev
+spring.profiles.active=<prd|dev|stg>
 
 ```
-docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> ping
+docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> checkpoint1
 ```
 
 ## Container Registry
@@ -51,7 +51,7 @@ docker login -u <username>
 
 
 ```
-docker build -t <username>/ping .
+docker build -t <username>/checkpoint .
 ```
 
 
@@ -59,7 +59,7 @@ docker build -t <username>/ping .
 
 
 ```
-docker tag ping acnaweb/ping
+docker tag ping tiagoalcan/checkpoint1
 ```
 
 
@@ -67,7 +67,7 @@ docker tag ping acnaweb/ping
 
 
 ```
-docker push acnaweb/ping 
+docker push tiagoalcan/checkpoint1 
 ```
 
 
@@ -89,8 +89,8 @@ http://localhost:8080/ping
 
 ## Contatos
 
-- Desenvolvedor 1 - desenvolvedor1@email.com
-- Desenvolvedor 2 - desenvolvedor2@email.com
+- Tiago Gomes Alcântara - tiago.gomesalcan@email.com
+- Guilherme Loureiro - guilhermelsba@email.com
 
 ## Referencias
 
